@@ -1,0 +1,97 @@
+.footer{
+    display: flex;
+    flex-direction:column;
+    .footer__body{
+        display: flex;
+        justify-content: space-between;
+        padding: 0 23px;
+        flex:1 1 auto;
+        
+        .footet__social{
+            display: flex;
+            align-items: center;
+            flex:0 1 296px;
+            .social__body{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-right: 9px;
+                width: 32px;
+                height: 32px;
+                background-color: #070716;
+                border-radius: 100%;
+                &:last-child{
+                    margin-right: 0px;
+                }
+                img{
+                    height: 100%;
+                    width: 100%;
+                    object-fit: contain;
+                }
+            }
+        }
+        .footer__menu{
+            display: flex;
+            flex-direction:column;
+            align-items: center;
+            margin-top: 14px;
+            &::before{
+                content:"";
+                width: 299px;
+                height: 4px;
+                background-color: #1fbad6;
+                margin-bottom: 32px;
+            }
+            .main__menu{
+                display: flex;
+                li{
+                    &:nth-child(2){
+                        margin: 0 48px 0 46px;
+                    }
+                    a{
+                        color: #070716;
+                        font-family: "Roboto-Light";
+                        font-size: 15px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                }
+                
+            }
+            .sub__menu{
+                display: flex;
+                margin: 15px 0 19px;
+                li{
+                    margin-right: 21px;
+                    &:last-child{
+                        margin-right: 0px;
+                    }
+                    a{
+                        color: #999999;
+                        font-family: "Roboto-Light";
+                        font-size: 11px;
+                        font-weight: 300;
+                        text-transform: uppercase;
+                    }
+                } 
+            }
+            span{
+                margin-bottom: 31px;
+                color: #1fbad6;
+                font-family: "Roboto-Medium";
+                font-size: 11px;
+                text-transform: uppercase;
+            }
+        }
+        .footer__market{
+            display: flex;
+            align-items: center;
+        }
+    }
+    .footer__line{
+        overflow: hidden;
+        display: flex;
+        height: 8px;
+        background-color: #070716;
+    }
+}
